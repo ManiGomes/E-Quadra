@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style_index.css">
+    <link rel="icon" href="assets/img/Logo_Equadra.png">
+    <title>E-quadra</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/Logo_Equadra.png" alt="" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Quadras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="formulario_de_login">
+        <div class="container">
+            <div class="signin-signup">
+                <form action="/login" method="POST" class="sign-in-form">
+                    <h2 class="title">Faça Login</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" placeholder="Usuário" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Senha" required>
+                    </div>
+                    <div id="error-message" style="color: red; display: none;">
+                        Usuário ou senha incorretos.
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="social-text">Ou Faça login com suas redes sociais</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Criar conta</a></p>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">CRIAR CONTA</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="usuario">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <input type="submit" value="Criar conta" class="btn">
+                    <p class="social-text">Ou se cadastre com suas redes sociais</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Já possui cadastro?</h3>
+                        <p>Não perca tempo e faça seu login para aproveitar nossos serviços</p>
+                        <button class="btn" id="sign-in-btn">Login</button>
+                    </div>
+                    <img src="signin.svg" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h2>Novo por aqui?</h2>
+                        <br>
+                        <h4>Não fique na plateia, jogue o jogo. <br> 
+                            Crie sua conta e reserve sua quadra hoje.</h4>
+                        <p>Com o E-Quadra você é capaz de encontrar as 
+                            melhores quadras disponíveis na sua região.</p>
+                        <button class="btn" id="sign-up-btn">Criar conta</button>
+                    </div>
+                    <img src="signup.svg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        <script src="app.js">
+ 
+        </script>
+    </section>
+</body>
+</html>

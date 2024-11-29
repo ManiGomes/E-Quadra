@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Quadra</title>
+    <link rel="stylesheet" href="/assets/css/style_quadras.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <img src="/assets/img/Logo_Equadra.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar por esporte, cidade, etc.">
+                <button id="search-button">🔍</button>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quadras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+        <h1 class="title_esportes">Escolha o esporte que deseja jogar</h1>
+        <div class="sports-selection">
+            <div class="sport" data-esporte="Futebol">⚽ Futebol</div>
+            <div class="sport" data-esporte="Volei">🏐 Volei</div>
+            <div class="sport" data-esporte="Basquete">🏀 Basquete</div>
+            <div class="sport" data-esporte="Tênis">🎾 Tênis</div>
+            <button id="clear-filters" class="clear-button">X</button>
+
+        </div>
+
+        <div id="quadras-list">
+        
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 E-Quadra | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="/assets/js/script_pages.js"></script>
+</body>
+</html>

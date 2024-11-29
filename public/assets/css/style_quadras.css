@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    left: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    justify-content: center;
+}
+
+#search-input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    background-color: #121212;
+    color: white;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 6px 12px;
+    background-color: #f37a19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #f96c2f;
+}
+
+/* Estilo para os botões de esportes */
+
+.title_esportes {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sports-selection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sport {
+    padding: 15px;
+    margin: 0 10px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.sport.active {
+    background-color: orange;
+}
+
+/* Estilo para o conteúdo das quadras */
+#quadras-list {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quadra-item {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 675px;
+
+}
+
+.quadra_cidade {
+    display: flex;
+    gap: 5px;
+}
+
+.quadra_cidade p{
+    text-decoration: underline;
+}
+
+.icon_quadra {
+    position: Relative;
+    width: 30px;
+    text-align: center;
+    left: 600px;
+    top: -30px;
+    font-size: 25px;
+}
+
+.point_local {
+    width: 20px;
+}
+
+.datas_exibidas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.lista_de_datas {
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.lista_de_datas:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.lista_de_datas.selected {
+    background-color: orange; 
+    color: white;  
+    font-weight: bold; 
+    cursor: pointer;  
+
+  
+}
+
+.alinhar_footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.dono_quadra {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.botao_reservar {
+    position: absolute;
+    left: 270px;
+    bottom: -5px;
+    font-size: 16px;
+}
+
+
+.icon_usuario {
+    width: 25px;
+}
+
+
+.icon_calendario {
+    left: 5px;
+    margin-bottom: 3px;
+}
+
+.botao_reservar {
+    background-color: #f37a19;
+    color: white;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.botao_calendario {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    right: -15px;
+    border-radius: 5px;
+    top: 10px;
+    color: white;
+    padding: 9px 13px;
+}
+
+.botao_calendario:hover{
+    background-color:#f37a19;
+}
+
+.date-picker {
+    display: none;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* button {
+    background-color: #f37a19;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f96c2f;
+} */
+
+/* Botão Limpar Filtros */
+.clear-button {
+    padding: 12px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 6px 0px 6px 0px;
+}
+
+.clear-button:hover {
+    background-color: #f37a19;
+}
+
+
